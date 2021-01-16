@@ -2,6 +2,9 @@
   <div class="hello">
     <NavMenu></NavMenu>
     <div>{{msg}}</div>
+    <div>{{msg}}</div>
+    <div>{{msg}}</div>
+    <div>{{msg}}</div>
     <div class="danger">{{warn}}</div>
     <Home></Home>
     <Button @reseveMsg="reseve"></Button>
