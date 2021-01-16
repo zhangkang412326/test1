@@ -6,6 +6,7 @@
     <Home></Home>
     <Button @reseveMsg="reseve"></Button>
     <PickDate></PickDate>
+    <FormName v-if="show_header == 'bool'"></FormName>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Home from '@/views/Home'
 import Button from '@/views/Button'
 import NavMenu from '@/views/NavMenu'
 import PickDate from '@/views/PickDate'
+import FormName from '@/views/FormName'
 
 export default {
   name: 'HelloWorld',
@@ -22,14 +24,16 @@ export default {
   },
   data () {
     return {
-      msg2:''
+      msg2:'',
+      show_header:'bool'
     }
   },
   components:{
     NavMenu,
     Home,
     Button,
-    PickDate
+    PickDate,
+    FormName
   },
   methods:{
     reseve(payload){
